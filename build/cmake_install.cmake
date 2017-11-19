@@ -1,4 +1,4 @@
-# Install script for directory: /home/hahoang/object_detection/test
+# Install script for directory: /home/hahoang/object_detection/realsense2_grabber
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hahoang/object_detection/test/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hahoang/object_detection/realsense2_grabber/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

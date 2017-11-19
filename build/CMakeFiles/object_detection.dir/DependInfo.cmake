@@ -4,13 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hahoang/object_detection/test/main.cpp" "/home/hahoang/object_detection/test/build/CMakeFiles/object_detection.dir/main.cpp.o"
-  "/home/hahoang/object_detection/test/realsense.cpp" "/home/hahoang/object_detection/test/build/CMakeFiles/object_detection.dir/realsense.cpp.o"
+  "/home/hahoang/object_detection/realsense2_grabber/main.cpp" "/home/hahoang/object_detection/realsense2_grabber/build/CMakeFiles/object_detection.dir/main.cpp.o"
+  "/home/hahoang/object_detection/realsense2_grabber/realsense.cpp" "/home/hahoang/object_detection/realsense2_grabber/build/CMakeFiles/object_detection.dir/realsense.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DISABLE_DAVIDSDK"
+  "DISABLE_DSSDK"
+  "DISABLE_ENSENSO"
+  "DISABLE_LIBUSB_1_0"
+  "DISABLE_OPENNI2"
+  "DISABLE_PCAP"
+  "DISABLE_PNG"
+  "DISABLE_RSSDK"
   "EIGEN_USE_NEW_STDVECTOR"
   "EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET"
   "FLANN_STATIC"
@@ -22,7 +30,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/vtk-5.8"
   "/usr/local/include"
   "/usr/local/include/opencv"
-  "/usr/include/pcl-1.7"
+  "/usr/local/include/pcl-1.8"
   "/usr/include/eigen3"
   "/usr/include/ni"
   )

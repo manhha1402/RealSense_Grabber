@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hahoang/object_detection/test
+CMAKE_SOURCE_DIR = /home/hahoang/object_detection/realsense2_grabber
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hahoang/object_detection/test/build
+CMAKE_BINARY_DIR = /home/hahoang/object_detection/realsense2_grabber/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/object_detection.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/object_detection.dir/flags.make
 
 CMakeFiles/object_detection.dir/main.cpp.o: CMakeFiles/object_detection.dir/flags.make
 CMakeFiles/object_detection.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hahoang/object_detection/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/object_detection.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/object_detection.dir/main.cpp.o -c /home/hahoang/object_detection/test/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hahoang/object_detection/realsense2_grabber/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/object_detection.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/object_detection.dir/main.cpp.o -c /home/hahoang/object_detection/realsense2_grabber/main.cpp
 
 CMakeFiles/object_detection.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/object_detection.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hahoang/object_detection/test/main.cpp > CMakeFiles/object_detection.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hahoang/object_detection/realsense2_grabber/main.cpp > CMakeFiles/object_detection.dir/main.cpp.i
 
 CMakeFiles/object_detection.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/object_detection.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hahoang/object_detection/test/main.cpp -o CMakeFiles/object_detection.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hahoang/object_detection/realsense2_grabber/main.cpp -o CMakeFiles/object_detection.dir/main.cpp.s
 
 CMakeFiles/object_detection.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/object_detection.dir/main.cpp.o.provides.build: CMakeFiles/object_det
 
 CMakeFiles/object_detection.dir/realsense.cpp.o: CMakeFiles/object_detection.dir/flags.make
 CMakeFiles/object_detection.dir/realsense.cpp.o: ../realsense.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hahoang/object_detection/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/object_detection.dir/realsense.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/object_detection.dir/realsense.cpp.o -c /home/hahoang/object_detection/test/realsense.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hahoang/object_detection/realsense2_grabber/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/object_detection.dir/realsense.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/object_detection.dir/realsense.cpp.o -c /home/hahoang/object_detection/realsense2_grabber/realsense.cpp
 
 CMakeFiles/object_detection.dir/realsense.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/object_detection.dir/realsense.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hahoang/object_detection/test/realsense.cpp > CMakeFiles/object_detection.dir/realsense.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hahoang/object_detection/realsense2_grabber/realsense.cpp > CMakeFiles/object_detection.dir/realsense.cpp.i
 
 CMakeFiles/object_detection.dir/realsense.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/object_detection.dir/realsense.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hahoang/object_detection/test/realsense.cpp -o CMakeFiles/object_detection.dir/realsense.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hahoang/object_detection/realsense2_grabber/realsense.cpp -o CMakeFiles/object_detection.dir/realsense.cpp.s
 
 CMakeFiles/object_detection.dir/realsense.cpp.o.requires:
 
@@ -150,27 +150,29 @@ object_detection: /usr/lib/i386-linux-gnu/libboost_serialization.so
 object_detection: /usr/lib/i386-linux-gnu/libboost_chrono.so
 object_detection: /usr/lib/i386-linux-gnu/libboost_atomic.so
 object_detection: /usr/lib/i386-linux-gnu/libboost_regex.so
-object_detection: /usr/lib/libpcl_common.so
-object_detection: /usr/lib/libpcl_octree.so
+object_detection: /usr/local/lib/libpcl_common.so
+object_detection: /usr/local/lib/libpcl_octree.so
 object_detection: /usr/lib/libOpenNI.so
-object_detection: /usr/lib/libpcl_io.so
+object_detection: /usr/local/lib/libpcl_io.so
 object_detection: /usr/lib/i386-linux-gnu/libflann_cpp_s.a
-object_detection: /usr/lib/libpcl_kdtree.so
-object_detection: /usr/lib/libpcl_search.so
-object_detection: /usr/lib/libpcl_sample_consensus.so
-object_detection: /usr/lib/libpcl_filters.so
-object_detection: /usr/lib/libpcl_features.so
-object_detection: /usr/lib/libpcl_keypoints.so
-object_detection: /usr/lib/libpcl_segmentation.so
-object_detection: /usr/lib/libpcl_visualization.so
-object_detection: /usr/lib/libpcl_outofcore.so
-object_detection: /usr/lib/libpcl_registration.so
-object_detection: /usr/lib/libpcl_recognition.so
+object_detection: /usr/local/lib/libpcl_kdtree.so
+object_detection: /usr/local/lib/libpcl_search.so
+object_detection: /usr/local/lib/libpcl_sample_consensus.so
+object_detection: /usr/local/lib/libpcl_filters.so
+object_detection: /usr/local/lib/libpcl_features.so
+object_detection: /usr/local/lib/libpcl_ml.so
+object_detection: /usr/local/lib/libpcl_segmentation.so
+object_detection: /usr/local/lib/libpcl_visualization.so
 object_detection: /usr/lib/i386-linux-gnu/libqhull.so
-object_detection: /usr/lib/libpcl_surface.so
-object_detection: /usr/lib/libpcl_people.so
-object_detection: /usr/lib/libpcl_tracking.so
-object_detection: /usr/lib/libpcl_apps.so
+object_detection: /usr/local/lib/libpcl_surface.so
+object_detection: /usr/local/lib/libpcl_registration.so
+object_detection: /usr/local/lib/libpcl_keypoints.so
+object_detection: /usr/local/lib/libpcl_tracking.so
+object_detection: /usr/local/lib/libpcl_recognition.so
+object_detection: /usr/local/lib/libpcl_stereo.so
+object_detection: /usr/local/lib/libpcl_apps.so
+object_detection: /usr/local/lib/libpcl_outofcore.so
+object_detection: /usr/local/lib/libpcl_people.so
 object_detection: /usr/lib/i386-linux-gnu/libboost_system.so
 object_detection: /usr/lib/i386-linux-gnu/libboost_filesystem.so
 object_detection: /usr/lib/i386-linux-gnu/libboost_thread.so
@@ -192,16 +194,18 @@ object_detection: /usr/local/lib/libopencv_phase_unwrapping.so.3.2.0
 object_detection: /usr/local/lib/libopencv_rgbd.so.3.2.0
 object_detection: /usr/local/lib/libopencv_calib3d.so.3.2.0
 object_detection: /usr/local/lib/libopencv_features2d.so.3.2.0
+object_detection: /usr/lib/libvtkGenericFiltering.so.5.8.0
+object_detection: /usr/lib/libvtkGeovis.so.5.8.0
 object_detection: /usr/lib/libvtkCharts.so.5.8.0
 object_detection: /usr/lib/libvtkViews.so.5.8.0
 object_detection: /usr/lib/libvtkInfovis.so.5.8.0
 object_detection: /usr/lib/libvtkWidgets.so.5.8.0
+object_detection: /usr/lib/libvtkVolumeRendering.so.5.8.0
 object_detection: /usr/lib/libvtkHybrid.so.5.8.0
 object_detection: /usr/lib/libvtkParallel.so.5.8.0
-object_detection: /usr/lib/libvtkVolumeRendering.so.5.8.0
 object_detection: /usr/lib/libvtkRendering.so.5.8.0
-object_detection: /usr/lib/libvtkGraphics.so.5.8.0
 object_detection: /usr/lib/libvtkImaging.so.5.8.0
+object_detection: /usr/lib/libvtkGraphics.so.5.8.0
 object_detection: /usr/lib/libvtkIO.so.5.8.0
 object_detection: /usr/lib/libvtkFiltering.so.5.8.0
 object_detection: /usr/lib/libvtkCommon.so.5.8.0
@@ -215,28 +219,30 @@ object_detection: /usr/local/lib/libopencv_videoio.so.3.2.0
 object_detection: /usr/local/lib/libopencv_imgcodecs.so.3.2.0
 object_detection: /usr/local/lib/libopencv_imgproc.so.3.2.0
 object_detection: /usr/local/lib/libopencv_core.so.3.2.0
-object_detection: /usr/lib/libpcl_common.so
-object_detection: /usr/lib/libpcl_octree.so
-object_detection: /usr/lib/libpcl_io.so
-object_detection: /usr/lib/libpcl_kdtree.so
-object_detection: /usr/lib/libpcl_search.so
-object_detection: /usr/lib/libpcl_sample_consensus.so
-object_detection: /usr/lib/libpcl_filters.so
-object_detection: /usr/lib/libpcl_features.so
-object_detection: /usr/lib/libpcl_keypoints.so
-object_detection: /usr/lib/libpcl_segmentation.so
-object_detection: /usr/lib/libpcl_visualization.so
-object_detection: /usr/lib/libpcl_outofcore.so
-object_detection: /usr/lib/libpcl_registration.so
-object_detection: /usr/lib/libpcl_recognition.so
-object_detection: /usr/lib/libpcl_surface.so
-object_detection: /usr/lib/libpcl_people.so
-object_detection: /usr/lib/libpcl_tracking.so
-object_detection: /usr/lib/libpcl_apps.so
+object_detection: /usr/local/lib/libpcl_common.so
+object_detection: /usr/local/lib/libpcl_octree.so
+object_detection: /usr/local/lib/libpcl_io.so
+object_detection: /usr/local/lib/libpcl_kdtree.so
+object_detection: /usr/local/lib/libpcl_search.so
+object_detection: /usr/local/lib/libpcl_sample_consensus.so
+object_detection: /usr/local/lib/libpcl_filters.so
+object_detection: /usr/local/lib/libpcl_features.so
+object_detection: /usr/local/lib/libpcl_ml.so
+object_detection: /usr/local/lib/libpcl_segmentation.so
+object_detection: /usr/local/lib/libpcl_visualization.so
+object_detection: /usr/local/lib/libpcl_surface.so
+object_detection: /usr/local/lib/libpcl_registration.so
+object_detection: /usr/local/lib/libpcl_keypoints.so
+object_detection: /usr/local/lib/libpcl_tracking.so
+object_detection: /usr/local/lib/libpcl_recognition.so
+object_detection: /usr/local/lib/libpcl_stereo.so
+object_detection: /usr/local/lib/libpcl_apps.so
+object_detection: /usr/local/lib/libpcl_outofcore.so
+object_detection: /usr/local/lib/libpcl_people.so
 object_detection: /usr/lib/i386-linux-gnu/libtinyxml.so
 object_detection: /usr/local/lib/librealsense2.so
 object_detection: CMakeFiles/object_detection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hahoang/object_detection/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable object_detection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hahoang/object_detection/realsense2_grabber/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable object_detection"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/object_detection.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -254,6 +260,6 @@ CMakeFiles/object_detection.dir/clean:
 .PHONY : CMakeFiles/object_detection.dir/clean
 
 CMakeFiles/object_detection.dir/depend:
-	cd /home/hahoang/object_detection/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hahoang/object_detection/test /home/hahoang/object_detection/test /home/hahoang/object_detection/test/build /home/hahoang/object_detection/test/build /home/hahoang/object_detection/test/build/CMakeFiles/object_detection.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hahoang/object_detection/realsense2_grabber/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hahoang/object_detection/realsense2_grabber /home/hahoang/object_detection/realsense2_grabber /home/hahoang/object_detection/realsense2_grabber/build /home/hahoang/object_detection/realsense2_grabber/build /home/hahoang/object_detection/realsense2_grabber/build/CMakeFiles/object_detection.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/object_detection.dir/depend
 

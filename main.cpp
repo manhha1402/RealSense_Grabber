@@ -24,15 +24,17 @@ void view(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& cloud)
                 viewer->spinOnce ();
               }
 }
-int main()
+int main() try
 {
 
    pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
    pcl::io::loadPCDFile("../meanregistration_cloud.pcd",*cloud);
+    realsense dev;
     /*Compute the 3x3 covariance matrix of a given set of points.
    * The result is returned as a Eigen::Matrix3f.
    * Note: the covariance matrix is not normalized with the number ofpoints
    */
+   /*
    Eigen::Vector4f pcaCentroid;
    pcl::compute3DCentroid(*cloud,pcaCentroid);
    Eigen::Matrix3f covariance;
@@ -79,7 +81,16 @@ cout<<"pcaCentroid"<<endl<<pcaCentroid<<endl;
                viewer->spinOnce ();
              }
 
-
+*/
     return 0;
 }
-
+catch (const rs2::error & e)
+{
+    std::cerr << "RealSense error calling " << e.get_failed_function() << "(" << e.get_failed_args() << "):\n    " << e.what() << std::endl;
+    return EXIT_FAILURE;
+}
+catch (const std::exception & e)
+{
+    std::cerr << e.what() << std::endl;
+    return EXIT_FAILURE;
+}

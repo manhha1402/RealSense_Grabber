@@ -67,8 +67,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.9/Modules/Platform/Linux-GNU.cmake"
   "/usr/local/share/cmake-3.9/Modules/Platform/Linux.cmake"
   "/usr/local/share/cmake-3.9/Modules/Platform/UnixPaths.cmake"
-  "/usr/share/pcl-1.7/PCLConfig.cmake"
-  "/usr/share/pcl-1.7/PCLConfigVersion.cmake"
+  "/usr/local/share/pcl-1.8/PCLConfig.cmake"
+  "/usr/local/share/pcl-1.8/PCLConfigVersion.cmake"
   )
 
 # The corresponding makefile is:

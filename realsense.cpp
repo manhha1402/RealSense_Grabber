@@ -2,6 +2,7 @@
 
 realsense::realsense()
 {
+    std::cout<<"hello"<<std::endl;
     //Enable color and depth streams with standard configuration
     config_.enable_stream(RS2_STREAM_DEPTH);
     config_.enable_stream(RS2_STREAM_COLOR,640,480, RS2_FORMAT_RGB8, 30);
@@ -13,13 +14,20 @@ realsense::realsense()
 realsense::~realsense()
 {
 }
+bool realsense::isConnected() const
+{
+    auto list = ctx_.query_devices();
+    return list.size()>0;
+}
 void realsense::printInformation()
 {
-     auto color_stream = selection_.get_stream(RS2_STREAM_COLOR).as<rs2::video_stream_profile>();
-     auto depth_stream = selection_.get_stream(RS2_STREAM_DEPTH).as<rs2::video_stream_profile>();
-     rs2_intrinsics color_K = color_stream.get_intrinsics();
-     rs2_intrinsics depth_K = depth_stream.get_intrinsics();
-     rs2_extrinsics depth2color_ext = depth_stream.get_extrinsics_to(color_stream);
+  if(isConnected())
+   {
+    auto color_stream = selection_.get_stream(RS2_STREAM_COLOR).as<rs2::video_stream_profile>();
+    auto depth_stream = selection_.get_stream(RS2_STREAM_DEPTH).as<rs2::video_stream_profile>();
+    rs2_intrinsics color_K = color_stream.get_intrinsics();
+    rs2_intrinsics depth_K = depth_stream.get_intrinsics();
+    rs2_extrinsics depth2color_ext = depth_stream.get_extrinsics_to(color_stream);
      ///// Color Information ////
     auto principal_point = std::make_pair(color_K.ppx, color_K.ppy);
     auto focal_length = std::make_pair(color_K.fx, color_K.fy);
@@ -46,25 +54,49 @@ void realsense::printInformation()
     std::cout<<depth2color_ext.rotation[3] <<" "<<depth2color_ext.rotation[4]<< " "<<depth2color_ext.rotation[5]<<std::endl;
     std::cout<<depth2color_ext.rotation[6] <<" "<<depth2color_ext.rotation[7]<< " "<<depth2color_ext.rotation[8]<<"]"<<std::endl;
     //Depth Scale
-    std::cout<<"Depth Scale :"<<std::endl<< depth_scale<<std::endl;
+    std::cout<<"Depth Scale :"<<std::endl<< depth_scale_<<std::endl;
+  }
+  else
+  {
+          throw std::runtime_error("Cannot get device information. No device connected.");
+  }
 }
-rs2::vertex* realsense::getVertices() const
+rs2::frameset realsense::wait_for_frames()
 {
+    rs2::frameset frameset_;
     // Using the align object, we block the application until a frameset is available
     while (!frameset_.first_or_default(RS2_STREAM_DEPTH) || !frameset_.first_or_default(align_to))
     {
     frameset_ = pipe_.wait_for_frames();
     }
+    return frameset_;
+}
+const uint16_t* realsense::getDepth(rs2::frameset& frameset_)
+{
+    if(!isConnected())
+    {
+        throw std::runtime_error("Cannot get depth image. No device connected.");
+    }
     //Align points from depth sensor to color sensor
     rs2::align align(align_to);
     auto proccessed = align.proccess(frameset_);
-    // Trying to get both color and aligned depth frames
-    auto color_frame = proccessed.get_color_frame();
-    auto aligned_depth_frame = proccessed.get_depth_frame();
-    //Get points by calculating depth information
-    points_ =pc_.calculate(aligned_depth_frame);
-    // Tell pointcloud object to map to this color frame
-    pc_.map_to(color_frame);
+    // Trying to get aligned depth frames
+    rs2::depth_frame aligned_depth_frame = proccessed.get_depth_frame();
+    //Retrieve aligned depth data
+     const uint16_t* depth_data_aligned = reinterpret_cast<const uint16_t *>(aligned_depth_frame.get_data());
+ //   return std::vector<uint16_t>(depth_data_aligned, depth_data_aligned + (sizeof(depth_data_aligned) / sizeof(depth_data_aligned[0])));
+    return depth_data_aligned;
+}
+const uint8_t* realsense::getColor(rs2::frameset& frameset_)
+{
 
-
+    if(!isConnected())
+    {
+        throw std::runtime_error("Cannot get color image. No device connected.");
+    }
+    // Trying to get color frames
+    rs2::video_frame color_frame = frameset_.get_color_frame();
+    //Retrieve color data
+    const uint8_t * color_data = reinterpret_cast<const uint8_t *>(color_frame.get_data());
+    return color_data;
 }
