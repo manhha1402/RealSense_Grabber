@@ -13,12 +13,16 @@ public:
     ~realsense();
     bool isConnected() const;
     void printInformation();
-    rs2::frameset wait_for_frames();
+    void wait_for_frames() const;
+    // Get color intrinsic
+    rs2_intrinsics color_intrin() const;
+    //Get depth intrinsic
+    rs2_intrinsics depth_intrin() const;
     //Get aligned depth stream
     //std::vector<uint16_t> getDepth() const;
-    const uint16_t* getDepth(rs2::frameset& frameset_) ;
+    const uint16_t* getDepth() ;
     //Get color information
-    const uint8_t* getColor(rs2::frameset& frameset_);
+    const uint8_t* getColor();
     //Debugging
   //  void logFile(const std::string& log_file) const;
 private:
@@ -27,6 +31,9 @@ private:
     rs2::config config_;
     rs2::context ctx_;
     rs2::pipeline_profile selection_;
+    rs2_intrinsics color_K;
+    rs2_intrinsics depth_K;
+    rs2_extrinsics depth2color_ext;
     float depth_scale_;
 
 };
