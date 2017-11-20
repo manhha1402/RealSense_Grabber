@@ -11,25 +11,10 @@
 #include "realsense.h"
 #include "realsense_utils.h"
 using namespace std;
-void view(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& cloud)
-{
 
-    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
-
-    viewer.reset(new pcl::visualization::PCLVisualizer);
-      pcl::visualization::PointCloudColorHandlerRGBField<pcl::PointXYZRGB> rgb(cloud);
-          viewer->addPointCloud(cloud,rgb, "output");
-
-           while (!viewer->wasStopped ())
-              {
-                viewer->spinOnce ();
-              }
-}
 int main() try
 {
-
    pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
-   pcl::io::loadPCDFile("../meanregistration_cloud.pcd",*cloud);
     realsense dev;
     dev.printInformation();
    while(dev.isConnected())
