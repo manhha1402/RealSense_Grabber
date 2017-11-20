@@ -523,6 +523,9 @@ RSSDK_LIBRARY:FILEPATH=RSSDK_LIBRARY-NOTFOUND
 //Path to a library.
 RSSDK_LIBRARY_DEBUG:FILEPATH=RSSDK_LIBRARY_DEBUG-NOTFOUND
 
+//Path to a library.
+Realsense_LIBS:FILEPATH=/usr/local/lib/librealsense2.so
+
 //Path to a file.
 TinyXML_INCLUDE_DIR:PATH=/usr/include
 

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/object_detection.dir/main.cpp.o"
   "CMakeFiles/object_detection.dir/realsense.cpp.o"
+  "CMakeFiles/object_detection.dir/realsense_utils.cpp.o"
   "object_detection.pdb"
   "object_detection"
 )

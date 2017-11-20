@@ -177,6 +177,33 @@ realsense.cpp.s:
 	$(MAKE) -f CMakeFiles/object_detection.dir/build.make CMakeFiles/object_detection.dir/realsense.cpp.s
 .PHONY : realsense.cpp.s
 
+realsense_utils.o: realsense_utils.cpp.o
+
+.PHONY : realsense_utils.o
+
+# target to build an object file
+realsense_utils.cpp.o:
+	$(MAKE) -f CMakeFiles/object_detection.dir/build.make CMakeFiles/object_detection.dir/realsense_utils.cpp.o
+.PHONY : realsense_utils.cpp.o
+
+realsense_utils.i: realsense_utils.cpp.i
+
+.PHONY : realsense_utils.i
+
+# target to preprocess a source file
+realsense_utils.cpp.i:
+	$(MAKE) -f CMakeFiles/object_detection.dir/build.make CMakeFiles/object_detection.dir/realsense_utils.cpp.i
+.PHONY : realsense_utils.cpp.i
+
+realsense_utils.s: realsense_utils.cpp.s
+
+.PHONY : realsense_utils.s
+
+# target to generate assembly for a file
+realsense_utils.cpp.s:
+	$(MAKE) -f CMakeFiles/object_detection.dir/build.make CMakeFiles/object_detection.dir/realsense_utils.cpp.s
+.PHONY : realsense_utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... realsense.o"
 	@echo "... realsense.i"
 	@echo "... realsense.s"
+	@echo "... realsense_utils.o"
+	@echo "... realsense_utils.i"
+	@echo "... realsense_utils.s"
 .PHONY : help
 
 

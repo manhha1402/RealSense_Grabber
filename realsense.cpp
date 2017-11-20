@@ -70,7 +70,10 @@ rs2_intrinsics realsense::depth_intrin() const
 {
     return depth_K;
 }
-
+float realsense::depthValue() const
+{
+    return depth_scale_;
+}
 void realsense::wait_for_frames() const
 {
      rs2::frameset frameset_;
@@ -80,7 +83,7 @@ void realsense::wait_for_frames() const
     frameset_ = pipe_.wait_for_frames();
     }
 }
-const uint16_t* realsense::getDepth()
+std::vector<uint16_t> realsense::getDepth() const
 {
     if(!isConnected())
     {
@@ -95,10 +98,10 @@ const uint16_t* realsense::getDepth()
     rs2::depth_frame aligned_depth_frame = proccessed.get_depth_frame();
     //Retrieve aligned depth data
      const uint16_t* depth_data_aligned = reinterpret_cast<const uint16_t *>(aligned_depth_frame.get_data());
- //   return std::vector<uint16_t>(depth_data_aligned, depth_data_aligned + (sizeof(depth_data_aligned) / sizeof(depth_data_aligned[0])));
-    return depth_data_aligned;
+    return std::vector<uint16_t>(depth_data_aligned, depth_data_aligned + (sizeof(depth_data_aligned) / sizeof(depth_data_aligned[0])));
+
 }
-const uint8_t* realsense::getColor()
+std::vector<uint8_t> realsense::getColor() const
 {
 
     if(!isConnected())
@@ -111,5 +114,5 @@ const uint8_t* realsense::getColor()
     rs2::video_frame color_frame = frameset_.get_color_frame();
     //Retrieve color data
     const uint8_t * color_data = reinterpret_cast<const uint8_t *>(color_frame.get_data());
-    return color_data;
+    return std::vector<uint8_t>(color_data, color_data + (sizeof(color_data) / sizeof(color_data[0])));
 }

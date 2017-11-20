@@ -9,7 +9,7 @@
 #include <boost/make_shared.hpp>
 #include <pcl/common/common.h>
 #include "realsense.h"
-#include
+
 using namespace std;
 void view(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& cloud)
 {

@@ -7,9 +7,11 @@ find_package(OpenCV REQUIRED)
 find_package(PCL 1.7.1 REQUIRED)
 find_package(TinyXML REQUIRED)
 find_package(Boost REQUIRED)
+find_library(Realsense_LIBS realsense2)
 find_package( Qt5 REQUIRED COMPONENTS Widgets Core )
 include_directories(${OpenCV_INCLUDE_DIRS} ${PCL_INCLUDE_DIRS}  ${TinyXML_INCLUDE_DIRS}   ${Eigen_INCLUDE_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 add_executable(${PROJECT_NAME} ${CPP_FILES})
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${PCL_LIBRARIES} ${TinyXML_LIBRARIES} ${Eigen_INCLUDE_DIRS} /usr/local/lib/librealsense2.so)
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${PCL_LIBRARIES} ${TinyXML_LIBRARIES} ${Eigen_INCLUDE_DIRS}
+                        ${Realsense_LIBS} ${DEPENDENCIES})
 
