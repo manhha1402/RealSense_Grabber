@@ -1,16 +1,16 @@
 project(object_detection)
 cmake_minimum_required(VERSION 2.8)
 set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -std=c++11")
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
+#set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 set(CPP_FILES main.cpp realsense.cpp realsense_utils.cpp)
 find_package(OpenCV REQUIRED)
 find_package(PCL 1.7.1 REQUIRED)
-find_package(TinyXML REQUIRED)
+#find_package(TinyXML REQUIRED)
 find_package(Boost REQUIRED)
 find_library(Realsense_LIBS realsense2)
-include_directories(${OpenCV_INCLUDE_DIRS} ${PCL_INCLUDE_DIRS}  ${TinyXML_INCLUDE_DIRS}   ${Eigen_INCLUDE_DIRS})
+include_directories(${OpenCV_INCLUDE_DIRS} ${PCL_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS} ) #${TinyXML_INCLUDE_DIRS}
 add_definitions(${PCL_DEFINITIONS})
 add_executable(${PROJECT_NAME} ${CPP_FILES})
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${PCL_LIBRARIES} ${TinyXML_LIBRARIES} ${Eigen_INCLUDE_DIRS}
-                        ${Realsense_LIBS} ${DEPENDENCIES})
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${PCL_LIBRARIES} ${Eigen_INCLUDE_DIRS}
+                        ${Realsense_LIBS} ${DEPENDENCIES}) #${TinyXML_LIBRARIES}
 

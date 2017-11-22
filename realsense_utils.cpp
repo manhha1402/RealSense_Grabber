@@ -35,7 +35,8 @@ pcl::PointCloud<pcl::PointXYZRGB>::Ptr get_point_cloud (const realsense& dev)
 {
     return get_point_cloud(dev.getDepth(),dev.getColor(),dev.color_intrin(),dev.depth_intrin(),dev.depthValue());
 }
-
+}
+/*
 std::shared_ptr<pcl::visualization::PCLVisualizer>
     visualize_rgb_pc(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& point_cloud)
 {
@@ -44,7 +45,8 @@ std::shared_ptr<pcl::visualization::PCLVisualizer>
     pcl::visualization::PointCloudColorHandlerRGBField<pcl::PointXYZRGB> rgb(point_cloud);
     viewer->addPointCloud<pcl::PointXYZRGB>(point_cloud, rgb, "sample cloud");
     viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
-    viewer->addCoordinateSystem(1.0);
+    viewer->addCoordinateSystem(1.0,"reference");
+    viewer->setCameraPosition(0, 0, -1, 0, 0, 0, 0, -1, 0);
     viewer->initCameraParameters();
     return viewer;
 }
@@ -58,3 +60,4 @@ void loop_viewer(const std::shared_ptr<pcl::visualization::PCLVisualizer>& viewe
 }
 
 }
+*/

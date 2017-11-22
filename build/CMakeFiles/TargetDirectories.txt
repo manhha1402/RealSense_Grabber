@@ -1,1 +1,0 @@
-/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/object_detection.dir

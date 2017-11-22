@@ -31,7 +31,9 @@ pcl::PointCloud<pcl::PointXYZRGB>::Ptr get_point_cloud(const std::vector<uint16_
 // 
 pcl::PointCloud<pcl::PointXYZRGB>::Ptr get_point_cloud(const realsense& dev);
 //Renser point cloud
+/*
 std::shared_ptr<pcl::visualization::PCLVisualizer>
 visualize_rgb_pc(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& point_cloud);
 void loop_viewer(const std::shared_ptr<pcl::visualization::PCLVisualizer>& viewer);
+*/
 }
