@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jcl-stud/object-detection/RealSense_Grabber/src
+CMAKE_SOURCE_DIR = /home/jcl-stud/object-detection/camera_viewer/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jcl-stud/object-detection/RealSense_Grabber/build
+CMAKE_BINARY_DIR = /home/jcl-stud/object-detection/camera_viewer/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/realsense.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/jcl-stud/object-detection/RealSense_Grabber/build
 CMakeFiles/realsense.dir/all:
 	$(MAKE) -f CMakeFiles/realsense.dir/build.make CMakeFiles/realsense.dir/depend
 	$(MAKE) -f CMakeFiles/realsense.dir/build.make CMakeFiles/realsense.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles  1 2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles  1 2
 	@echo "Built target realsense"
 .PHONY : CMakeFiles/realsense.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/realsense.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/realsense.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/realsense.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles 0
 .PHONY : CMakeFiles/realsense.dir/rule
 
 # Convenience name for target.

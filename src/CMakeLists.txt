@@ -10,7 +10,7 @@ pkg_check_modules(OPENNI2 libopenni2) # checks for all the given modules
 #Librealsense 
 find_library(Realsense_LIBS realsense2)
 
-set(CPP_FILES main.cpp realsense.cpp viewer_utils.cpp)
+set(CPP_FILES main.cpp realsense.cpp)# viewer_utils.cpp)
 find_package(OpenCV REQUIRED)
 find_package(PCL 1.7.1 REQUIRED)
 find_package(TinyXML REQUIRED)

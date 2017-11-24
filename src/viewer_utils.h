@@ -35,4 +35,4 @@ std::shared_ptr<pcl::visualization::PCLVisualizer>
 visualize_rgb_pc(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& point_cloud);
 void loop_viewer(const std::shared_ptr<pcl::visualization::PCLVisualizer>& viewer);
 */
-}
+};

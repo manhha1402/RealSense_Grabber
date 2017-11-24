@@ -20,22 +20,11 @@ int frames_saved = 0;
 
 int main() try
 {
-    realsense dev;
-    dev.printInformation();
+    //realsense dev;
+  //  dev.init();
 
-    // (2) Open Viewer
-    pcl::visualization::PCLVisualizer viewer("Point Cloud");
-
-    initViewer(viewer);
-    viewer.addPointCloud(cloud);
-   while(!viewer.wasStopped())
-   {
-        dev.wait_for_frames();
-        cloud = viewer_utils::realsense_get_point_cloud(dev);
-        // Visualize the point cloud       
-        viewer.updatePointCloud(cloud);
-        viewer.spinOnce();
-   }
+   // dev.printInformation();
+    cout<<"helo"<<endl;
 
     return 0;
 }

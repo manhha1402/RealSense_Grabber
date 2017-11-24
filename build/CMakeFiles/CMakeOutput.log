@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/3.2.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/3.2.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,35 +23,35 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec152373736/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec152373736.dir/build.make CMakeFiles/cmTryCompileExec152373736.dir/build
-make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec152373736.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec152373736.dir/testCCompiler.c.o   -c /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec152373736
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec152373736.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec152373736.dir/testCCompiler.c.o  -o cmTryCompileExec152373736 -rdynamic 
-make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec521624173/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec521624173.dir/build.make CMakeFiles/cmTryCompileExec521624173.dir/build
+make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec521624173.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec521624173.dir/testCCompiler.c.o   -c /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec521624173
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec521624173.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec521624173.dir/testCCompiler.c.o  -o cmTryCompileExec521624173 -rdynamic 
+make[1]: Leaving directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec123047019/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec123047019.dir/build.make CMakeFiles/cmTryCompileExec123047019.dir/build
-make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec123047019.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec123047019.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec123047019
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec123047019.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTryCompileExec123047019.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec123047019 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3757385334/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3757385334.dir/build.make CMakeFiles/cmTryCompileExec3757385334.dir/build
+make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3757385334.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3757385334.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3757385334
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3757385334.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTryCompileExec3757385334.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3757385334 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -61,24 +61,24 @@ Thread model: posix
 gcc version 5.4.1 20160904 (Ubuntu 5.4.1-2ubuntu1~14.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec123047019' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYmGaIi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec123047019 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec123047019.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3757385334' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbxWg4N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3757385334 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3757385334.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec123047019/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec123047019.dir/build.make CMakeFiles/cmTryCompileExec123047019.dir/build]
-  ignore line: [make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec123047019.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec123047019.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec123047019]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec123047019.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec123047019.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec123047019 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec3757385334/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3757385334.dir/build.make CMakeFiles/cmTryCompileExec3757385334.dir/build]
+  ignore line: [make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3757385334.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3757385334.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3757385334]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3757385334.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec3757385334.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3757385334 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -88,13 +88,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.1 20160904 (Ubuntu 5.4.1-2ubuntu1~14.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec123047019' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYmGaIi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec123047019 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec123047019.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3757385334' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbxWg4N.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3757385334 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3757385334.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccYmGaIi.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccbxWg4N.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -112,7 +112,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec123047019] ==> ignore
+    arg [cmTryCompileExec3757385334] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -124,7 +124,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTryCompileExec123047019.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3757385334.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -156,18 +156,18 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2170623419/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2170623419.dir/build.make CMakeFiles/cmTryCompileExec2170623419.dir/build
-make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2170623419.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec2170623419.dir/feature_tests.c.o   -c /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec2170623419
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2170623419.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec2170623419.dir/feature_tests.c.o  -o cmTryCompileExec2170623419 -rdynamic 
-make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4187985842/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4187985842.dir/build.make CMakeFiles/cmTryCompileExec4187985842.dir/build
+make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4187985842.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec4187985842.dir/feature_tests.c.o   -c /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec4187985842
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4187985842.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4187985842.dir/feature_tests.c.o  -o cmTryCompileExec4187985842 -rdynamic 
+make[1]: Leaving directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -177,18 +177,18 @@ make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/bu
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3842153724/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3842153724.dir/build.make CMakeFiles/cmTryCompileExec3842153724.dir/build
-make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3842153724.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec3842153724.dir/feature_tests.c.o   -c /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec3842153724
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3842153724.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec3842153724.dir/feature_tests.c.o  -o cmTryCompileExec3842153724 -rdynamic 
-make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1766404258/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1766404258.dir/build.make CMakeFiles/cmTryCompileExec1766404258.dir/build
+make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1766404258.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec1766404258.dir/feature_tests.c.o   -c /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec1766404258
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1766404258.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1766404258.dir/feature_tests.c.o  -o cmTryCompileExec1766404258 -rdynamic 
+make[1]: Leaving directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -198,18 +198,18 @@ make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/bu
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec140555252/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec140555252.dir/build.make CMakeFiles/cmTryCompileExec140555252.dir/build
-make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec140555252.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec140555252.dir/feature_tests.c.o   -c /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec140555252
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec140555252.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec140555252.dir/feature_tests.c.o  -o cmTryCompileExec140555252 -rdynamic 
-make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1893408312/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1893408312.dir/build.make CMakeFiles/cmTryCompileExec1893408312.dir/build
+make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1893408312.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec1893408312.dir/feature_tests.c.o   -c /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec1893408312
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1893408312.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1893408312.dir/feature_tests.c.o  -o cmTryCompileExec1893408312 -rdynamic 
+make[1]: Leaving directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -217,32 +217,32 @@ make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/bu
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec4031900302/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec4031900302.dir/build.make CMakeFiles/cmTryCompileExec4031900302.dir/build
-make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec4031900302.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec4031900302.dir/testCXXCompiler.cxx.o -c /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec4031900302
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4031900302.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec4031900302.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec4031900302 -rdynamic 
-make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2172096651/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2172096651.dir/build.make CMakeFiles/cmTryCompileExec2172096651.dir/build
+make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2172096651.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2172096651.dir/testCXXCompiler.cxx.o -c /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2172096651
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2172096651.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2172096651.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2172096651 -rdynamic 
+make[1]: Leaving directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2577391424/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2577391424.dir/build.make CMakeFiles/cmTryCompileExec2577391424.dir/build
-make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2577391424.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2577391424.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec2577391424
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2577391424.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTryCompileExec2577391424.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2577391424 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3514008224/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3514008224.dir/build.make CMakeFiles/cmTryCompileExec3514008224.dir/build
+make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3514008224.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3514008224.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3514008224
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3514008224.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTryCompileExec3514008224.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3514008224 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -252,24 +252,24 @@ Thread model: posix
 gcc version 5.4.1 20160904 (Ubuntu 5.4.1-2ubuntu1~14.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2577391424' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5gyODy.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2577391424 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec2577391424.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3514008224' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCM1IuX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3514008224 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3514008224.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec2577391424/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2577391424.dir/build.make CMakeFiles/cmTryCompileExec2577391424.dir/build]
-  ignore line: [make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2577391424.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2577391424.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec2577391424]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2577391424.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec2577391424.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2577391424 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec3514008224/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3514008224.dir/build.make CMakeFiles/cmTryCompileExec3514008224.dir/build]
+  ignore line: [make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3514008224.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3514008224.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3514008224]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3514008224.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec3514008224.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3514008224 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -279,13 +279,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.1 20160904 (Ubuntu 5.4.1-2ubuntu1~14.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2577391424' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5gyODy.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2577391424 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec2577391424.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3514008224' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCM1IuX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3514008224 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTryCompileExec3514008224.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc5gyODy.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccCM1IuX.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -303,7 +303,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2577391424] ==> ignore
+    arg [cmTryCompileExec3514008224] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -315,7 +315,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTryCompileExec2577391424.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3514008224.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -345,18 +345,18 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3755813282/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3755813282.dir/build.make CMakeFiles/cmTryCompileExec3755813282.dir/build
-make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3755813282.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTryCompileExec3755813282.dir/feature_tests.cxx.o -c /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec3755813282
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3755813282.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec3755813282.dir/feature_tests.cxx.o  -o cmTryCompileExec3755813282 -rdynamic 
-make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2975146391/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2975146391.dir/build.make CMakeFiles/cmTryCompileExec2975146391.dir/build
+make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2975146391.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTryCompileExec2975146391.dir/feature_tests.cxx.o -c /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2975146391
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2975146391.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2975146391.dir/feature_tests.cxx.o  -o cmTryCompileExec2975146391 -rdynamic 
+make[1]: Leaving directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -419,18 +419,18 @@ make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/bu
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2588539032/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2588539032.dir/build.make CMakeFiles/cmTryCompileExec2588539032.dir/build
-make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2588539032.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec2588539032.dir/feature_tests.cxx.o -c /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec2588539032
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2588539032.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec2588539032.dir/feature_tests.cxx.o  -o cmTryCompileExec2588539032 -rdynamic 
-make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2240537684/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2240537684.dir/build.make CMakeFiles/cmTryCompileExec2240537684.dir/build
+make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2240537684.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec2240537684.dir/feature_tests.cxx.o -c /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2240537684
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2240537684.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2240537684.dir/feature_tests.cxx.o  -o cmTryCompileExec2240537684 -rdynamic 
+make[1]: Leaving directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -493,18 +493,18 @@ make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/bu
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3715837017/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3715837017.dir/build.make CMakeFiles/cmTryCompileExec3715837017.dir/build
-make[1]: Entering directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3715837017.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec3715837017.dir/feature_tests.cxx.o -c /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec3715837017
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3715837017.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec3715837017.dir/feature_tests.cxx.o  -o cmTryCompileExec3715837017 -rdynamic 
-make[1]: Leaving directory `/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2975114847/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2975114847.dir/build.make CMakeFiles/cmTryCompileExec2975114847.dir/build
+make[1]: Entering directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2975114847.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec2975114847.dir/feature_tests.cxx.o -c /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2975114847
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2975114847.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2975114847.dir/feature_tests.cxx.o  -o cmTryCompileExec2975114847 -rdynamic 
+make[1]: Leaving directory `/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

@@ -1,6 +1,6 @@
 #include "realsense.h"
 
-realsense::init()
+void realsense::init()
 {
 
     //Set heigh,width,size
@@ -25,7 +25,7 @@ realsense::~realsense()
 }
 
 //Get streams of camera
-void realsense::getData()
+int realsense::getData()
 {
     //Check device opened
         if(!isConnected())
@@ -41,6 +41,7 @@ void realsense::getData()
      // Trying to get both color and aligned depth frames
              color_frame_ref_ = proccessed.get_color_frame();
              depth_frame_ref_ = proccessed.get_depth_frame();
+    return 0;
 }
 
 //Print some information of camera

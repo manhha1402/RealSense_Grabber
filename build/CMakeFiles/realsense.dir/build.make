@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jcl-stud/object-detection/RealSense_Grabber/src
+CMAKE_SOURCE_DIR = /home/jcl-stud/object-detection/camera_viewer/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jcl-stud/object-detection/RealSense_Grabber/build
+CMAKE_BINARY_DIR = /home/jcl-stud/object-detection/camera_viewer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/realsense.dir/depend.make
@@ -50,18 +50,18 @@ include CMakeFiles/realsense.dir/progress.make
 include CMakeFiles/realsense.dir/flags.make
 
 CMakeFiles/realsense.dir/main.cpp.o: CMakeFiles/realsense.dir/flags.make
-CMakeFiles/realsense.dir/main.cpp.o: /home/jcl-stud/object-detection/RealSense_Grabber/src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/realsense.dir/main.cpp.o: /home/jcl-stud/object-detection/camera_viewer/src/main.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/realsense.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/realsense.dir/main.cpp.o -c /home/jcl-stud/object-detection/RealSense_Grabber/src/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/realsense.dir/main.cpp.o -c /home/jcl-stud/object-detection/camera_viewer/src/main.cpp
 
 CMakeFiles/realsense.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jcl-stud/object-detection/RealSense_Grabber/src/main.cpp > CMakeFiles/realsense.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jcl-stud/object-detection/camera_viewer/src/main.cpp > CMakeFiles/realsense.dir/main.cpp.i
 
 CMakeFiles/realsense.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jcl-stud/object-detection/RealSense_Grabber/src/main.cpp -o CMakeFiles/realsense.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jcl-stud/object-detection/camera_viewer/src/main.cpp -o CMakeFiles/realsense.dir/main.cpp.s
 
 CMakeFiles/realsense.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/realsense.dir/main.cpp.o.requires
@@ -73,18 +73,18 @@ CMakeFiles/realsense.dir/main.cpp.o.provides: CMakeFiles/realsense.dir/main.cpp.
 CMakeFiles/realsense.dir/main.cpp.o.provides.build: CMakeFiles/realsense.dir/main.cpp.o
 
 CMakeFiles/realsense.dir/realsense.cpp.o: CMakeFiles/realsense.dir/flags.make
-CMakeFiles/realsense.dir/realsense.cpp.o: /home/jcl-stud/object-detection/RealSense_Grabber/src/realsense.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles $(CMAKE_PROGRESS_2)
+CMakeFiles/realsense.dir/realsense.cpp.o: /home/jcl-stud/object-detection/camera_viewer/src/realsense.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/realsense.dir/realsense.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/realsense.dir/realsense.cpp.o -c /home/jcl-stud/object-detection/RealSense_Grabber/src/realsense.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/realsense.dir/realsense.cpp.o -c /home/jcl-stud/object-detection/camera_viewer/src/realsense.cpp
 
 CMakeFiles/realsense.dir/realsense.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense.dir/realsense.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jcl-stud/object-detection/RealSense_Grabber/src/realsense.cpp > CMakeFiles/realsense.dir/realsense.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jcl-stud/object-detection/camera_viewer/src/realsense.cpp > CMakeFiles/realsense.dir/realsense.cpp.i
 
 CMakeFiles/realsense.dir/realsense.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense.dir/realsense.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jcl-stud/object-detection/RealSense_Grabber/src/realsense.cpp -o CMakeFiles/realsense.dir/realsense.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jcl-stud/object-detection/camera_viewer/src/realsense.cpp -o CMakeFiles/realsense.dir/realsense.cpp.s
 
 CMakeFiles/realsense.dir/realsense.cpp.o.requires:
 .PHONY : CMakeFiles/realsense.dir/realsense.cpp.o.requires
@@ -95,41 +95,16 @@ CMakeFiles/realsense.dir/realsense.cpp.o.provides: CMakeFiles/realsense.dir/real
 
 CMakeFiles/realsense.dir/realsense.cpp.o.provides.build: CMakeFiles/realsense.dir/realsense.cpp.o
 
-CMakeFiles/realsense.dir/realsense_utils.cpp.o: CMakeFiles/realsense.dir/flags.make
-CMakeFiles/realsense.dir/realsense_utils.cpp.o: /home/jcl-stud/object-detection/RealSense_Grabber/src/realsense_utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/realsense.dir/realsense_utils.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/realsense.dir/realsense_utils.cpp.o -c /home/jcl-stud/object-detection/RealSense_Grabber/src/realsense_utils.cpp
-
-CMakeFiles/realsense.dir/realsense_utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense.dir/realsense_utils.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jcl-stud/object-detection/RealSense_Grabber/src/realsense_utils.cpp > CMakeFiles/realsense.dir/realsense_utils.cpp.i
-
-CMakeFiles/realsense.dir/realsense_utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense.dir/realsense_utils.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jcl-stud/object-detection/RealSense_Grabber/src/realsense_utils.cpp -o CMakeFiles/realsense.dir/realsense_utils.cpp.s
-
-CMakeFiles/realsense.dir/realsense_utils.cpp.o.requires:
-.PHONY : CMakeFiles/realsense.dir/realsense_utils.cpp.o.requires
-
-CMakeFiles/realsense.dir/realsense_utils.cpp.o.provides: CMakeFiles/realsense.dir/realsense_utils.cpp.o.requires
-	$(MAKE) -f CMakeFiles/realsense.dir/build.make CMakeFiles/realsense.dir/realsense_utils.cpp.o.provides.build
-.PHONY : CMakeFiles/realsense.dir/realsense_utils.cpp.o.provides
-
-CMakeFiles/realsense.dir/realsense_utils.cpp.o.provides.build: CMakeFiles/realsense.dir/realsense_utils.cpp.o
-
 # Object files for target realsense
 realsense_OBJECTS = \
 "CMakeFiles/realsense.dir/main.cpp.o" \
-"CMakeFiles/realsense.dir/realsense.cpp.o" \
-"CMakeFiles/realsense.dir/realsense_utils.cpp.o"
+"CMakeFiles/realsense.dir/realsense.cpp.o"
 
 # External object files for target realsense
 realsense_EXTERNAL_OBJECTS =
 
 realsense: CMakeFiles/realsense.dir/main.cpp.o
 realsense: CMakeFiles/realsense.dir/realsense.cpp.o
-realsense: CMakeFiles/realsense.dir/realsense_utils.cpp.o
 realsense: CMakeFiles/realsense.dir/build.make
 realsense: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
 realsense: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.8
@@ -182,6 +157,7 @@ realsense: /usr/lib/libvtkGenericFiltering.so.5.8.0
 realsense: /usr/lib/libvtkGeovis.so.5.8.0
 realsense: /usr/lib/libvtkCharts.so.5.8.0
 realsense: /usr/local/lib/librealsense2.so
+realsense: /usr/lib/x86_64-linux-gnu/libtinyxml.so
 realsense: /usr/lib/x86_64-linux-gnu/libopencv_nonfree.so.2.4.8
 realsense: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
 realsense: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
@@ -215,6 +191,7 @@ realsense: /usr/lib/libpcl_outofcore.so
 realsense: /usr/lib/libpcl_tracking.so
 realsense: /usr/lib/libpcl_apps.so
 realsense: /usr/local/lib/librealsense2.so
+realsense: /usr/lib/x86_64-linux-gnu/libtinyxml.so
 realsense: /usr/lib/libvtkViews.so.5.8.0
 realsense: /usr/lib/libvtkInfovis.so.5.8.0
 realsense: /usr/lib/libvtkWidgets.so.5.8.0
@@ -238,7 +215,6 @@ CMakeFiles/realsense.dir/build: realsense
 
 CMakeFiles/realsense.dir/requires: CMakeFiles/realsense.dir/main.cpp.o.requires
 CMakeFiles/realsense.dir/requires: CMakeFiles/realsense.dir/realsense.cpp.o.requires
-CMakeFiles/realsense.dir/requires: CMakeFiles/realsense.dir/realsense_utils.cpp.o.requires
 .PHONY : CMakeFiles/realsense.dir/requires
 
 CMakeFiles/realsense.dir/clean:
@@ -246,6 +222,6 @@ CMakeFiles/realsense.dir/clean:
 .PHONY : CMakeFiles/realsense.dir/clean
 
 CMakeFiles/realsense.dir/depend:
-	cd /home/jcl-stud/object-detection/RealSense_Grabber/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jcl-stud/object-detection/RealSense_Grabber/src /home/jcl-stud/object-detection/RealSense_Grabber/src /home/jcl-stud/object-detection/RealSense_Grabber/build /home/jcl-stud/object-detection/RealSense_Grabber/build /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/realsense.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jcl-stud/object-detection/camera_viewer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jcl-stud/object-detection/camera_viewer/src /home/jcl-stud/object-detection/camera_viewer/src /home/jcl-stud/object-detection/camera_viewer/build /home/jcl-stud/object-detection/camera_viewer/build /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/realsense.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/realsense.dir/depend
 

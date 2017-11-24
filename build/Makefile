@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jcl-stud/object-detection/RealSense_Grabber/src
+CMAKE_SOURCE_DIR = /home/jcl-stud/object-detection/camera_viewer/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jcl-stud/object-detection/RealSense_Grabber/build
+CMAKE_BINARY_DIR = /home/jcl-stud/object-detection/camera_viewer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,30 +162,6 @@ realsense.cpp.s:
 	$(MAKE) -f CMakeFiles/realsense.dir/build.make CMakeFiles/realsense.dir/realsense.cpp.s
 .PHONY : realsense.cpp.s
 
-realsense_utils.o: realsense_utils.cpp.o
-.PHONY : realsense_utils.o
-
-# target to build an object file
-realsense_utils.cpp.o:
-	$(MAKE) -f CMakeFiles/realsense.dir/build.make CMakeFiles/realsense.dir/realsense_utils.cpp.o
-.PHONY : realsense_utils.cpp.o
-
-realsense_utils.i: realsense_utils.cpp.i
-.PHONY : realsense_utils.i
-
-# target to preprocess a source file
-realsense_utils.cpp.i:
-	$(MAKE) -f CMakeFiles/realsense.dir/build.make CMakeFiles/realsense.dir/realsense_utils.cpp.i
-.PHONY : realsense_utils.cpp.i
-
-realsense_utils.s: realsense_utils.cpp.s
-.PHONY : realsense_utils.s
-
-# target to generate assembly for a file
-realsense_utils.cpp.s:
-	$(MAKE) -f CMakeFiles/realsense.dir/build.make CMakeFiles/realsense.dir/realsense_utils.cpp.s
-.PHONY : realsense_utils.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -201,9 +177,6 @@ help:
 	@echo "... realsense.o"
 	@echo "... realsense.i"
 	@echo "... realsense.s"
-	@echo "... realsense_utils.o"
-	@echo "... realsense_utils.i"
-	@echo "... realsense_utils.s"
 .PHONY : help
 
 

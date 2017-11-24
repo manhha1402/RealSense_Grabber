@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/realsense.dir/main.cpp.o"
   "CMakeFiles/realsense.dir/realsense.cpp.o"
-  "CMakeFiles/realsense.dir/realsense_utils.cpp.o"
   "realsense.pdb"
   "realsense"
 )

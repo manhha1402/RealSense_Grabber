@@ -14,7 +14,7 @@ public:
     ~realsense();
     void init();
     void printInformation();  
-    void getData();
+    int getData();
     /*Getter*/
     inline bool isConnected() const {return ctx_.query_devices().size()>0 ;}
     // Get color intrinsic

@@ -1,1 +1,1 @@
-/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/realsense.dir
+/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/realsense.dir

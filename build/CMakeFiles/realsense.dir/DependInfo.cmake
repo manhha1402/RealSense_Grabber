@@ -4,9 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jcl-stud/object-detection/RealSense_Grabber/src/main.cpp" "/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/realsense.dir/main.cpp.o"
-  "/home/jcl-stud/object-detection/RealSense_Grabber/src/realsense.cpp" "/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/realsense.dir/realsense.cpp.o"
-  "/home/jcl-stud/object-detection/RealSense_Grabber/src/realsense_utils.cpp" "/home/jcl-stud/object-detection/RealSense_Grabber/build/CMakeFiles/realsense.dir/realsense_utils.cpp.o"
+  "/home/jcl-stud/object-detection/camera_viewer/src/main.cpp" "/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/realsense.dir/main.cpp.o"
+  "/home/jcl-stud/object-detection/camera_viewer/src/realsense.cpp" "/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/realsense.dir/realsense.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
