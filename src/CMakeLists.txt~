@@ -1,0 +1,28 @@
+project(camera_viewer)
+cmake_minimum_required(VERSION 2.8)
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/") #find libraries
+
+
+# OpenNI2
+include(FindPkgConfig) #
+pkg_check_modules(OPENNI2 libopenni2) # checks for all the given modules
+#Librealsense 
+find_library(Realsense_LIBS realsense2)
+
+set(CPP_FILES main.cpp realsense.cpp viewer_utils.cpp)
+find_package(OpenCV REQUIRED)
+find_package(PCL 1.7.1 REQUIRED)
+find_package(TinyXML REQUIRED)
+find_package(Boost REQUIRED)
+
+include_directories(${OpenCV_INCLUDE_DIRS} ${PCL_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS} ${TinyXML_INCLUDE_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+#Executable for realsense camera
+add_executable(realsense ${CPP_FILES})
+target_link_libraries(realsense ${OpenCV_LIBS} ${PCL_LIBRARIES} ${Eigen_INCLUDE_DIRS}
+                        ${Realsense_LIBS} ${DEPENDENCIES}) ${TinyXML_LIBRARIES})
+#Executable for Openni2 cameras
+
+
+

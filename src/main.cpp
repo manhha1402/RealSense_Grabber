@@ -10,7 +10,7 @@
 #include <boost/make_shared.hpp>
 #include <pcl/point_cloud.h>
 #include "realsense.h"
-#include "realsense_utils.h"
+#include "viewer_utils.h"
 using namespace std;
 
 void initViewer(pcl::visualization::PCLVisualizer &viewer);
@@ -25,12 +25,13 @@ int main() try
 
     // (2) Open Viewer
     pcl::visualization::PCLVisualizer viewer("Point Cloud");
+
     initViewer(viewer);
     viewer.addPointCloud(cloud);
    while(!viewer.wasStopped())
    {
         dev.wait_for_frames();
-        cloud = rs_utils::get_point_cloud(dev);
+        cloud = viewer_utils::realsense_get_point_cloud(dev);
         // Visualize the point cloud       
         viewer.updatePointCloud(cloud);
         viewer.spinOnce();
