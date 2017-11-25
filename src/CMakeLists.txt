@@ -6,11 +6,13 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 
 # OpenNI2
 include(FindPkgConfig) #
-pkg_check_modules(OPENNI2 libopenni2) # checks for all the given modules
+pkg_check_modules(OPENNI libopenni) # checks for all the given modules
 #Librealsense 
 find_library(Realsense_LIBS realsense2)
 
-set(CPP_FILES main.cpp realsense.cpp)# viewer_utils.cpp)
+
+
+set(CPP_FILES main.cpp realsense.cpp)
 find_package(OpenCV REQUIRED)
 find_package(PCL 1.7.1 REQUIRED)
 find_package(TinyXML REQUIRED)

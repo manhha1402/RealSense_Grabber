@@ -1,34 +1,37 @@
 #include "viewer_utils.h"
 
-pcl::PointCloud<pcl::PointXYZRGB> viewer_utils::get_point_cloud(const std::vector<uint16_t>& depth_data_aligned,const std::vector<uint8_t>& color_data,
-                                                       const rs2_intrinsics& color_K,const rs2_intrinsics& depth_K,const float depth_scale)
+pcl::PointCloud<pcl::PointXYZRGB> viewer_utils::realsense_get_point_cloud()
 {
   pcl::PointCloud<pcl::PointXYZRGB> cloud;
-    cloud.width = depth_K.width * depth_K.height;
+    cloud.width = getWidth() * getHeight();
     cloud.height = 1;
-
-   float color_point[3], scaled_depth;
-  for(int y=0; y<depth_K.height; ++y)
+    cloud.resize( cloud.width*cloud.height);
+    // (3) Acquire color and depth data
+        const uint16_t* depth_data_aligned = getDepthDataPtr();
+        const uint8_t* color_data = getColorDataPtr();
+        rs2_intrinsics color_K_clone = color_intrin();
+  float color_point[3], scaled_depth;
+  for(int y=0; y<getHeight(); ++y)
   {
-      for(int x=0; x<depth_K.width; ++x)
+      for(int x=0; x<getWidth(); ++x)
       {
         pcl::PointXYZRGB pt;
         //get depth value at pixel [x,y]
-        uint16_t depth_value = depth_data_aligned[y*depth_K.width+x];
+        uint16_t depth_value = depth_data_aligned[y*getWidth()+x];
         //Get actual depth
-        scaled_depth = depth_value *depth_scale;
+        scaled_depth = depth_value *depthValue();
         //if no information, continue
-        if(scaled_depth==0) continue;
+        //if(scaled_depth==0) continue;
         //Get x,y,z from color coordinate
         float color_pixel[2] = {static_cast<float>(x), static_cast<float>(y)};
-        rs2_deproject_pixel_to_point(color_point, &color_K, color_pixel, scaled_depth);
+        rs2_deproject_pixel_to_point(color_point, &color_K_clone, color_pixel, scaled_depth);
 
         pt.x = color_point[0];
         pt.y = color_point[1];
         pt.z = color_point[2];
         auto i = static_cast<int>(color_pixel[0]);
         auto j = static_cast<int>(color_pixel[1]);
-        auto offset = i * 3 + j * color_K.width * 3;
+        auto offset = i * 3 + j * getWidth() * 3;
         pt.r = static_cast<uint8_t>(color_data[offset]);
         pt.g = static_cast<uint8_t>(color_data[offset + 1]);
         pt.b = static_cast<uint8_t>(color_data[offset + 2]);
@@ -37,9 +40,17 @@ pcl::PointCloud<pcl::PointXYZRGB> viewer_utils::get_point_cloud(const std::vecto
   }
  return cloud;
 }
-pcl::PointCloud<pcl::PointXYZRGB> viewer_utils::get_point_cloud (const realsense& dev)
+
+cv::Mat viewer_utils::getColorMat()
 {
-    return get_point_cloud(dev.getDepth(),dev.getColor(),dev.color_intrin(),dev.depth_intrin(),dev.depthValue());
+    cv::Mat color_image(getWidth(),getHeight(),CV_8UC3,(void*)getColorDataPtr(), cv::Mat::AUTO_STEP);
+    cv::cvtColor(color_image, color_image, CV_BGR2RGB);
+    return color_image;
+}
+cv::Mat viewer_utils::getDepthMat()
+{
+    cv::Mat depth_image(getWidth(),getHeight(),CV_16U,(void*)getDepthDataPtr(),cv::Mat::AUTO_STEP);
+    return depth_image;
 }
 
 /*

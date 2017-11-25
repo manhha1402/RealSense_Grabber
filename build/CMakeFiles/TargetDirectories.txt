@@ -1,1 +1,0 @@
-/home/jcl-stud/object-detection/camera_viewer/build/CMakeFiles/realsense.dir
