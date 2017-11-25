@@ -32,16 +32,17 @@ public:
     //Get height
     inline int getHeight() const {return height_;}
     //Get width
-   inline int getWidth() const {return width_;}
+    inline int getWidth() const {return width_;}
     //Get size
-   inline int getSize() const {return size_;}
+    inline int getSize() const {return size_;}
     //Get depth image
      cv::Mat depthImage();
-   // { return reinterpret_cast<const uint16_t*> (proccessed_.get_depth_frame().get_data()); }
     //Get color image
     cv::Mat colorImage();
-  //{  return reinterpret_cast<const uint8_t*> (proccessed_.get_color_frame().get_data()); }
+    //Get point cloud
     pcl::PointCloud<pcl::PointXYZRGB> getPointCloud();
+    //Get center distance
+    float getCenterDistance();
 private:
 
     rs2::pipeline pipe_;

@@ -37,6 +37,7 @@ int main() try
             cv::imshow("Color Stream", color_image);
             cv::imshow("Depth Stream",depth_image);
             *cloud = dev.getPointCloud();
+            cout<<"Distance from color camera to center of image "<<dev.getCenterDistance()<<endl;
             viewer.updatePointCloud(cloud);
             viewer.spinOnce();
         }

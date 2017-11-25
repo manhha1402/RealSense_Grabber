@@ -80,7 +80,7 @@ void realsense::getData()
               scaled_depth = depth_value *depth_scale_;
               float color_pixel[2] = {static_cast<float>(x), static_cast<float>(y)};
               rs2_deproject_pixel_to_point(color_point, &color_K, color_pixel, scaled_depth);
-              if (color_point[2] <= 0.f || color_point[2] > 5.f) continue;
+              if (color_point[2] <= 0.1f || color_point[2] > 5.f) continue; //remove points too close or too far
               pt.x = color_point[0];
               pt.y = color_point[1];
               pt.z = color_point[2];
@@ -97,6 +97,15 @@ void realsense::getData()
         }
       return cloud;
  }
+float realsense::getCenterDistance()
+{
+    int center_x = getWidth()/2;
+    int center_y = getHeight()/2;
+    int centerIndex = (getWidth()*center_y) + center_x;
+    const uint16_t * depth_data = reinterpret_cast<const uint16_t *> (proccessed_.get_depth_frame().get_data());
+    return depth_data[centerIndex]*depth_scale_;
+
+}
 
 //Print some information of camera
 void realsense::printInformation()
