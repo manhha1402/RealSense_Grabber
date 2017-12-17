@@ -2,6 +2,9 @@
 #include <string>
 #include <sstream>
 #include <opencv2/opencv.hpp>
+#include "opencv2/core.hpp"
+#include "opencv2/features2d.hpp"
+#include "opencv2/xfeatures2d.hpp"
 #include <pcl/point_types.h>
 #include <pcl/io/io.h>
 #include <pcl/io/pcd_io.h>
@@ -9,19 +12,49 @@
 #include <pcl/visualization/cloud_viewer.h>
 #include <boost/make_shared.hpp>
 #include <pcl/point_cloud.h>
-#include "realsense.h"
-//#include <OpenNI.h>
-//#include "viewer_utils.h"
-using namespace std;
 
+//Header files
+#include "realsense.h"
+#include "util.hpp"
+#include "registrator.hpp"
+#include "filters.hpp"
+#include "segmentation.hpp"
+#include "loader.hpp"
+#include "fiducial/FiducialDefines.h"
+#include "fiducial/FiducialModelPi.h"
+#include "fiducial/AbstractFiducialModel.h"
+#include "RobustMatcher.h"
+using namespace std;
+using namespace ipa_Fiducials;
 void initViewer(pcl::visualization::PCLVisualizer &viewer);
 void keyboardCallback (const pcl::visualization::KeyboardEvent &event);
+void keyboardCallbackRoi(int event, int x,int y, int flags, void* param);
 pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGB>);
 cv::Mat color_image, depth_image;
 int frames_saved = 0;
+bool clicked = false;
 
-int main() try
+cv::Mat camera_matrix =  (cv::Mat_<double>(3,3)<<   619.69,0,313.013 ,
+                                                 0,619.69, 245.14,
+0,0,1);
+int main(int argc,char** argv) try
 {
+    //std::string model_filename = argv[1]; //pi tag file
+    cv::Mat img = cv::imread("../frame-000002.color.png",1);
+    RobustMatcher rmatcher;
+    cv::Ptr<cv::FeatureDetector> detector = cv::xfeatures2d::SURF::create(400);
+    rmatcher.setFeatureDetector(detector);
+    vector<cv::KeyPoint> keypoints;
+    cv::Mat descriptor;
+    rmatcher.computeKeyPoints(img,keypoints);
+    cv::drawKeypoints(img,keypoints,img,cv::Scalar(-1));
+    cv::imshow("sad",img);
+    cv::waitKey(0);
+    //cout<<keypoints.size()<<endl;
+
+
+
+    /*
     realsense dev;
     //  Open Viewer
     pcl::visualization::PCLVisualizer viewer("Point Cloud");
@@ -46,7 +79,7 @@ int main() try
 
    // dev.printInformation();
     cout<<"helo"<<endl;
-
+*/
     return 0;
 }
 catch (const rs2::error & e)

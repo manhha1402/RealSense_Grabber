@@ -1,0 +1,11 @@
+%YAML:1.0
+---
+cameraMatrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: f
+   data: [ 619.69, 0., 313.013,
+       0., 619.69, 245.14, 0.,
+       -0., 1.]
+maxDistance: 0.007
+
