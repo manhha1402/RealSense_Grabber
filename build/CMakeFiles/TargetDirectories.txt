@@ -1,5 +1,0 @@
-/home/hahoang/object_detection/realsense_object/build/CMakeFiles/rebuild_cache.dir
-/home/hahoang/object_detection/realsense_object/build/CMakeFiles/pi_tag.dir
-/home/hahoang/object_detection/realsense_object/build/CMakeFiles/edit_cache.dir
-/home/hahoang/object_detection/realsense_object/build/CMakeFiles/model.dir
-/home/hahoang/object_detection/realsense_object/build/CMakeFiles/realsense.dir

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpi_tag.a  CMakeFiles/pi_tag.dir/common/src/AbstractFiducialModel.cpp.o CMakeFiles/pi_tag.dir/common/src/FiducialModelPi.cpp.o CMakeFiles/pi_tag.dir/common/src/ellipserefine.cpp.o
-/usr/bin/ranlib libpi_tag.a
